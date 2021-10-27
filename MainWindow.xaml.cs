@@ -24,5 +24,10 @@ namespace WaterMark
         {
             InitializeComponent();
         }
+
+        private void TestButton_Click(object sender, RoutedEventArgs e)
+        {
+            TestButton.Content = "클릭했어!";
+        }
     }
 }
