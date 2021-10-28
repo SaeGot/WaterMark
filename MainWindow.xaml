@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="TestButton" Content="Button" Click="TestButton_Click" HorizontalAlignment="Left" Margin="297,191,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <Button x:Name="TestButton" Click="TestButton_Click" HorizontalAlignment="Left" Margin="297,191,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="0">
+            <Button.Content>
+                <Border CornerRadius="2" BorderThickness="1" BorderBrush="DodgerBlue" Background="#bdfbfa" Width="180" Height="50">
+                    <TextBlock Text="Button" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </Button.Content>            
+        </Button>
     </Grid>
 </Window>
