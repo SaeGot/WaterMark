@@ -6,8 +6,24 @@
         xmlns:local="clr-namespace:WaterMark"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="Style1">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border CornerRadius="2" BorderThickness="1" BorderBrush="DodgerBlue" Background="#bdfbfa" Width="180" Height="50"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>                    
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Button x:Name="TestButton" Click="TestButton_Click" HorizontalAlignment="Left" Margin="297,191,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="0">
+        <Button x:Name="TestButton2" Content="Button2" Style="{StaticResource Style1}" Click="TestButton_Click" HorizontalAlignment="Left" Margin="300,250,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="2"/>
+        <Button x:Name="TestButton" Click="TestButton_Click" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="0">
             <Button.Content>
                 <Border CornerRadius="2" BorderThickness="1" BorderBrush="DodgerBlue" Background="#bdfbfa" Width="180" Height="50">
                     <TextBlock Text="Button" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
