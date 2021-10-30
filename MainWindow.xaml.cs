@@ -27,7 +27,16 @@ namespace WaterMark
 
         private void TestButton_Click(object sender, RoutedEventArgs e)
         {
-            TestButton.Content = "클릭했어!";
+            Button button = (Button)sender;
+            switch (button.Name)
+            {
+                case "TestButton":
+                    TestButton.Content = "클릭했어!";
+                    break;
+                case "TestButton2":
+                    TestButton2.Content = "클릭했어!";
+                    break;
+            }
         }
     }
 }

@@ -22,7 +22,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Button x:Name="TestButton2" Content="Button2" Style="{StaticResource Style1}" Click="TestButton_Click" HorizontalAlignment="Left" Margin="300,250,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="2"/>
+        <Button x:Name="TestButton2" Content="Button2" Style="{StaticResource Style1}" Click="TestButton_Click" HorizontalAlignment="Left" Margin="300,250,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="0"/>
         <Button x:Name="TestButton" Click="TestButton_Click" HorizontalAlignment="Left" Margin="300,150,0,0" VerticalAlignment="Top" Width="200" Background="Transparent" BorderThickness="0">
             <Button.Content>
                 <Border CornerRadius="2" BorderThickness="1" BorderBrush="DodgerBlue" Background="#bdfbfa" Width="180" Height="50">
